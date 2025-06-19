@@ -1,0 +1,46 @@
+.jobPostCards{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 1rem;
+  padding: 1rem;
+  display: inline-block;
+  border-radius: 5px;
+  margin-top: 2rem;
+}
+.jobPostCards button{
+  margin: .3rem;
+}
+
+.jobFilters{
+  background-color: gray;
+  height: 80vh;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.displayJobs{
+  background-color: bisque;
+  width: 100%;
+  padding: 2rem;
+}
+.filterOptions{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+span{
+  width: 8rem;
+  text-align: center;
+  padding: 10px 10px;
+  border: 2px solid rgb(1, 64, 95);
+  margin: 20px 12px;
+  background-color: rgb(249, 235, 75);
+  border-radius: 10px;
+  transition: transform 1s ease;
+  cursor: pointer;
+}
+span:hover{
+  transform: scale(1.05);
+  background-color: rgb(252, 203, 41);
+}

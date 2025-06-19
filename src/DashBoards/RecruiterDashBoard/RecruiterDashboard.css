@@ -1,0 +1,11 @@
+
+.recruiterDashboard{
+  display: flex;
+  gap: 20px;
+}
+.sidebar{
+  background-color: lightblue;
+  height:90vh;
+  padding: 2rem;
+  width: 25%;
+}
