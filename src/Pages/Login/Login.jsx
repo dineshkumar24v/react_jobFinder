@@ -63,7 +63,7 @@ function Login(){
           <option value="recruiter">Recruiter</option>
         </Form.Select>
         <button type="submit" id="submitBtn">Login </button>
-        <Link to="/signup">go to SignupForm</Link>
+        <Link to="/signup" className="link">go to SignupForm</Link>
       </Form>
     </div>
   )

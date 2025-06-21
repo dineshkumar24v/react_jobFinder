@@ -3,6 +3,16 @@
   padding: .5rem;
   border-radius: .4rem;
   margin-top: 1rem;
+  margin: 1rem;
+  text-align: center;
+}
+.link{
+  text-decoration: none;
+  color: black;
+  &:hover{
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
 }
 #submitBtn:hover{
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
