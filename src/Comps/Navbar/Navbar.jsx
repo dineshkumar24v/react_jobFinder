@@ -22,7 +22,7 @@ const NavbarComp = ()=>{
     <div style={{display:'flex', justifyContent:'space-around',backgroundColor:"lightblue",padding:"8px"}}>
       <Navbar expand="lg" className="bg-body-tertiary" >
       <Container fluid >
-        <Navbar.Brand href="#" >Job Kavala</Navbar.Brand>
+        <Navbar.Brand href="#" style={{color:"brown", fontWeight:"700"}}>Job Kavala</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll" >
           <Nav
