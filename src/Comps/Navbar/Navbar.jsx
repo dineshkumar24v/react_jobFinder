@@ -19,7 +19,7 @@ const NavbarComp = ()=>{
     }
   };
   return(
-    <div style={{display:'flex', justifyContent:'space-around'}}>
+    <div style={{display:'flex', justifyContent:'space-around',backgroundColor:"lightblue",padding:"8px"}}>
       <Navbar expand="lg" className="bg-body-tertiary" >
       <Container fluid >
         <Navbar.Brand href="#" >Job Kavala</Navbar.Brand>
@@ -36,7 +36,7 @@ const NavbarComp = ()=>{
             <button onClick={()=>navigate("/job_seekerDashBoard/appliedJobs")}>Applied  Jobs</button>
             </> : <>
               <Link to="/signup" style={{textDecoration:'none'}}>SignUp</Link>
-            <Link to="/login" style={{textDecoration:'none'}}>Login</Link>
+              <Link to="/login" style={{textDecoration:'none'}}>Login</Link>
             </>}
           </Nav>
         </Navbar.Collapse>
