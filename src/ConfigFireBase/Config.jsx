@@ -5,7 +5,7 @@ import {getAuth} from "firebase/auth"
 import {getFirestore} from "firebase/firestore"
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCHMJMsbo4mqQZ6OSFEEfiyESrrxTb5q2s",
+  apiKey: import.meta.env.VITE_API_KEY,
   authDomain: "job-finder-d.firebaseapp.com",
   projectId: "job-finder-d",
   storageBucket: "job-finder-d.firebasestorage.app",
