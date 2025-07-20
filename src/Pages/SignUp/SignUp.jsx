@@ -50,12 +50,15 @@ const SignUp = () => {
   return (
     <div
       style={{
-        marginTop: "3rem",
         backgroundColor: "lightblue",
-        padding: "2rem",
+        display:"flex",
+        justifyContent:"center",
+        margin:"auto",
+        alignItems:"center",
+        width:"50%"
       }}
     >
-      <Form style={{ maxWidth: 500, margin: "auto" }} onSubmit={handleSignUpSubmit}>
+      <Form style={{  }} onSubmit={handleSignUpSubmit}>
         {/* // form submit  */}
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
           <Form.Label>Name</Form.Label>

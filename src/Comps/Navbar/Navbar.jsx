@@ -19,27 +19,30 @@ const NavbarComp = ()=>{
     }
   };
   return(
-    <div style={{display:'flex', justifyContent:'space-around',backgroundColor:"lightblue",padding:"8px"}}>
+    <div>
       <Navbar expand="lg" className="bg-body-tertiary" >
-      <Container fluid >
-        <Navbar.Brand href="#" style={{color:"brown", fontWeight:"700"}}>Job Kavala</Navbar.Brand>
+      <Container fluid id='navbarCont'>
+        <div className='navLeftCont'>
+        <img src='logo.webp' id='navbarLogo'/>
+        <Navbar.Brand href="#" id='navLeft'>Job Kavala</Navbar.Brand>
+        </div>
         <Navbar.Toggle aria-controls="navbarScroll" />
+        <div className='navRight'>
         <Navbar.Collapse id="navbarScroll" >
           <Nav
-            className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: '100px',gap:'10px'}}
-            navbarScroll>
+            className="me-auto my-2 my-lg-0" navbarScroll >
             
-            {loggedInUser ? <><button onClick={handleLogout} id='submitBtn'>logout</button>
+            {loggedInUser ? <><button className='navRightStyle' onClick={handleLogout} id='submitBtn'>logout</button>
 
-            <button onClick={()=>navigate("/job_seekerDashBoard/savedJobs")}>Saved Jobs</button>
-            <button onClick={()=>navigate("/job_seekerDashBoard/appliedJobs")}>Applied  Jobs</button>
+            <button className='navRightStyle' onClick={()=>navigate("/job_seekerDashBoard/savedJobs")}>Saved Jobs</button>
+            <button className='navRightStyle' onClick={()=>navigate("/job_seekerDashBoard/appliedJobs")}>Applied  Jobs</button>
             </> : <>
-              <Link to="/signup" style={{textDecoration:'none'}}>SignUp</Link>
-              <Link to="/login" style={{textDecoration:'none'}}>Login</Link>
+              <Link to="/signup" className='navRightStyle'  style={{textDecoration:'none'}}>Register</Link>
+              <Link to="/login" className='navRightStyle' style={{textDecoration:'none'}}>Login</Link>
             </>}
           </Nav>
         </Navbar.Collapse>
+        </div>
       </Container>
     </Navbar>
     </div>
